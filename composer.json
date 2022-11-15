@@ -9,15 +9,9 @@
       "email": "support@simonsator.de"
     }
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/Simonsator/PartyAndFriends-PHP-Lib"
-    }
-  ],
   "require": {
     "php": "^7.4|^8.0",
-    "simonsator/party-and-friends-php-lib": "@dev"
+    "simonsator/party-and-friends-php-lib": "dev-master"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
