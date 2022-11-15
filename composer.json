@@ -1,7 +1,7 @@
 {
   "name": "simonsator/party-and-friends-php-lib-demo",
-  "description": "PHP library for the PAF Friend Data",
-  "type": "library",
+  "description": "A demo of the party and friends php lib",
+  "type": "project",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
@@ -9,8 +9,15 @@
       "email": "support@simonsator.de"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Simonsator/PartyAndFriends-PHP-Lib"
+    }
+  ],
   "require": {
-    "php": "^7.4|^8.0"
+    "php": "^7.4|^8.0",
+    "simonsator/party-and-friends-php-lib": "@dev"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
