@@ -1,5 +1,8 @@
 .page-content {
-    margin-left: 10px;
-    margin-right: 10px;
     max-width: 550px;
+}
+
+body {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
 }
