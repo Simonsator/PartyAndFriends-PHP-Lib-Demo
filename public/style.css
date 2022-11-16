@@ -14,3 +14,9 @@ body {
 .top-distance-keeper {
     margin-top: 10px;
 }
+
+.submit-card-button {
+    margin-top: 8px;
+    margin-left: 1px;
+    width: calc(100% - 2px);
+}
