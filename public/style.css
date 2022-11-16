@@ -1,8 +1,16 @@
+body {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
 .page-content {
     max-width: 550px;
 }
 
-body {
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+.data-show-label {
+    width: 100%;
+}
+
+.top-distance-keeper {
+    margin-top: 10px;
 }

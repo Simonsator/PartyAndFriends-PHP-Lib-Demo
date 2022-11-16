@@ -8,25 +8,43 @@ require_once 'src/view/html/header.html';
 use Simonsator\PartyAndFriends\PAFPlayer;
 
 ?>
-    <p>The UUID of the given player is: <?php echo $givenPlayer->getUniqueID(); ?></p>
-    <p>The name of the given player is: <?php echo $givenPlayer->getName(); ?></p>
-    <p> The id of the given player is: <?php echo $givenPlayer->getID(); ?></p>
-    <p>Friends:</p>
-<?php
-$players = $givenPlayer->getFriends();
-$emptyMessage = "The player does not have added friends yet.";
-require 'src/view/list_players.php';
-?>
-    <p>Received friend requests:</p>
-<?php
-$players = $givenPlayer->getFriendRequests();
-$emptyMessage = "The player did not receive any friends requests.";
-require 'src/view/list_players.php';
-?>
-    <p>Sent friend requests:</p>
-<?php
-$players = $givenPlayer->getSentFriendRequests();
-$emptyMessage = "The player did not send any friends requests.";
-require 'src/view/list_players.php';
-?>
+    <label class="data-show-label">The UUID of the given player is: <input class="form-control" type="text"
+                                                                           value="<?php echo $givenPlayer->getUniqueID(); ?>"
+                                                                           readonly></label>
+    <label class="data-show-label">The name of the given player is: <input class="form-control" type="text"
+                                                                           value="<?php echo $givenPlayer->getName(); ?>"
+                                                                           readonly></label>
+    <label class="data-show-label">The id of the given player is: <input class="form-control" type="text"
+                                                                         value="<?php echo $givenPlayer->getID(); ?>"
+                                                                         readonly></label>
+    <div class="card top-distance-keeper">
+        <div class="card-body">
+            <h5 class="card-title">Friends:</h5>
+            <?php
+            $players = $givenPlayer->getFriends();
+            $emptyMessage = "The player does not have added friends yet.";
+            require 'src/view/list_players.php';
+            ?>
+        </div>
+    </div>
+    <div class="card top-distance-keeper">
+        <div class="card-body">
+            <h5 class="card-title">Received friend requests:</h5>
+            <?php
+            $players = $givenPlayer->getFriendRequests();
+            $emptyMessage = "The player did not receive any friends requests.";
+            require 'src/view/list_players.php';
+            ?>
+        </div>
+    </div>
+    <div class="card top-distance-keeper">
+        <div class="card-body">
+            <h5 class="card-title">Sent friend requests:</h5>
+            <?php
+            $players = $givenPlayer->getSentFriendRequests();
+            $emptyMessage = "The player did not send any friends requests.";
+            require 'src/view/list_players.php';
+            ?>
+        </div>
+    </div>
 <?php require_once 'src/view/html/body_end.html';
